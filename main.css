@@ -1,0 +1,39 @@
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--box-size: 250px;
+}
+
+body {
+	padding: 1em 2em;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+body > * + * {
+	margin-top: 1em;
+}
+
+#color-field-wrapper {
+	position: relative;
+}
+
+#hex-symbol {
+	position: absolute;
+	top: 0;
+	left: calc(-1ch - 0.25em);
+	font-size: 2rem;
+}
+
+#color-field {
+	width: var(--box-size);
+	outline: none;
+	font-size: 2rem;
+}
+
+#preview-box {
+	width: var(--box-size);
+	height: var(--box-size);
+	border: 0.1em solid #000000;
+}
